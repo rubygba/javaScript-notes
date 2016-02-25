@@ -1,4 +1,4 @@
-﻿#JavaScript笔记
+#JavaScript笔记
 
 标签（空格分隔）： JavaScript
 
@@ -13,13 +13,13 @@ JavaScript兼容HTML代码的注释，所以<!–和–>也被视为单行注释
 上面代码中，只有x = 1会执行，其他的部分都被注释掉了。
 
 JavaScript七种数据类型：
-> number数值
-> string字符串
-> boolean布尔值
-> undefined
-> null
-> object对象
-> //Symbol
+> - number数值
+> - string字符串
+> - boolean布尔值
+> - undefined
+> - null
+> - object对象
+> - //Symbol
 
 JavaScript内部，所有数字都是以64位浮点数形式储存
 JavaScript内部自动将八进制、十六进制、二进制转为十进制
@@ -65,13 +65,6 @@ JavaScript对象：一种无序的数据集合，由若干个“键值对”（k
       'h w': "Hello World",
       'p+q': "Hello World"
     };
-
-
-
-
-
-
-
 
 
 
