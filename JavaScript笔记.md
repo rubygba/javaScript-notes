@@ -59,7 +59,7 @@ switch结构不利于代码重用，往往可以用对象形式重写。
 如果price再多一些，对象属性写法的简洁优势就更明显了。
 
 ##1.3 js对象
-JavaScript对象：一种无序的数据集合，由若干个“键值对”（key-value）构成。
+1. JavaScript对象：一种无序的数据集合，由若干个“键值对”（key-value）构成。
 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），也不是数字，则必须加上引号。
 
     var o = {
@@ -68,6 +68,36 @@ JavaScript对象：一种无序的数据集合，由若干个“键值对”（k
       'p+q': "Hello World"
     };
 
+2. js数组
+
+    var typea = {
+      "first-name": "Green",
+      "last-name": "Lucy"
+    };
+    var typeb = {
+      first_name = "Green",
+      last_name = "Lucy"
+    };
+    
+取数组值，两种方法：
+a. array["one"]
+b. array.one // 优先考虑
+
+3. 对象通过引用来传递，它们永远不会被复制
+
+4. 对象的检索、更新
+
+5. 原型
+每个对象都链接到一个原型对象、并从中继承属性
+
+原型连接：
+a. 修改对象的属性值不影响原型
+b. 检索对象的某个属性，属性不存在时从它的原型中寻找
+c. 为原型添加属性，该属性会立即对所有原型所属对象可见
+
+bool hasOwnProperty('') 检查是否独有属性
+
+'delete objecta.one' 删除objecta的one属性暴露出原型的one属性
 ##1.4 js函数作用域
 js的函数是根据词法来划分作用域的，而不是动态划分
 
