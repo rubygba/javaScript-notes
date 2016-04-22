@@ -14,6 +14,8 @@ Vanilla
     string.slice(0, 1) //取字符串/字符数组0号元素
     string.split(" ") //分割字符串，返回字符串数组
     string.join(" ")
+    dom.mouseout //事件冒泡，也就是事件可能被同时绑定到了该容器的子元素上，所以鼠标移出每个子元素时也都会触发
+
     
 jQuery
 
